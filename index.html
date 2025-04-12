@@ -15,7 +15,7 @@
     <!-- Navbar -->
     <div class="">
         <nav>
-            <div class="flex justify-between p-4 shadow items-center ">
+            <div class="flex justify-between p-4 shadow items-center sticky">
                 <h1 class="text-4xl font-bold ml-4">Websyra</h1>
                 <div class=" lg:hidden"><i class="fa-solid fa-bars " style="color: #000000;"></i></div>
                 <ul class="hidden lg:flex flex-row gap-5 mr-4  ">
@@ -39,7 +39,7 @@
         </nav>
 
 
-        <section>
+        <section class="bg-yellow-50 pt-20 pb-40">
             <div class="text-center">
                 <h1 class="text-5xl lg:text-9xl mt-32 font-semibold mb-6">
                     Let's bring <br /> your vision <br /> to <span class="text-yellow-500">life</span>
@@ -50,29 +50,6 @@
                 </button>
             </div>
         </section>
-
-        <!-- <section>
-
-        <div class="">
-            <h1>About us</h1>
-            <p>Flora is a creative collective of four
-                passionate minds dedicated to crafting
-                meaningful digital experiences. We bridge
-                the gap between ideas and execution
-                through innovation, collaboration, and
-                design thinking. <br>Rooted in clarity, creativity, and purpose, we
-                turn concepts into timeless digital realities
-                that inspire and empower. 
-                
-                <br><span>At Flora, we don’t just build — we bring
-                    visions to life.</span>
-                </p>
-                
-        </div>
-        <div>
-<img src="./Images/w.png" alt="">
-        </div>
-    </section> -->
 
 
 
@@ -115,26 +92,62 @@
     <section class="mt-32 text-center font-bold bg-yellow-50 pt-10">
         <h1 class="text-4xl">Our mission & vision</h1>
 
-        <div class="flex justify-center gap-10 p-10">
-               
-            
-            <img src="./Images/w.png" class="">
-            
-                <p class="mt-20 text-2xl ml-10">At Websyra, we are driven by a shared mission —
-                    to craft purposeful digital experiences through the
-                    seamless blend of creativity, technology, and
-                    strategy. We believe in transforming ideas into
-                    impactful solutions that inspire, engage, and add
-                    real value.
-<br><br> 
-                    Our vision is to grow as a trusted digital collective,
-                    known for thoughtful design, innovative thinking,
-                    and reliable execution. We aim to empower
-                    businesses, nurture creativity, and shape the future
-                    of meaningful digital experiences.</p>
-            
+        <div class="flex flex-col gap-10 justify-center md:flex-row justify-center gap-10 p-10">
+
+            <!-- Image wrapper to control alignment -->
+            <div class="flex justify-center">
+                <img src="./Images/w.png" class="h-96 ">
+            </div>
+
+            <p class="mt-4 md:mt-20 text-2xl md:ml-10 text-center md:text-left">
+                At Websyra, we are driven by a shared mission —
+                to craft purposeful digital experiences through the
+                seamless blend of creativity, technology, and
+                strategy. We believe in transforming ideas into
+                impactful solutions that inspire, engage, and add
+                real value.
+                <br><br>
+                Our vision is to grow as a trusted digital collective,
+                known for thoughtful design, innovative thinking,
+                and reliable execution. We aim to empower
+                businesses, nurture creativity, and shape the future
+                of meaningful digital experiences.
+            </p>
+
         </div>
+
     </section>
+
+
+
+    <!-- About us -->
+
+
+    <section>
+        <h1 class="font-bold text-3xl text-center mt-24 ">About us</h1>
+        <div class=" text-center  md:flex justify-center items-center">
+            
+            <p class="text-xl p-5">Flora is a creative collective of four
+                passionate minds dedicated to crafting
+                meaningful digital experiences. We bridge
+                the gap between ideas and execution
+                through innovation, collaboration, and
+                design thinking. <br>Rooted in clarity, creativity, and purpose, we
+                turn concepts into timeless digital realities
+                that inspire and empower.
+
+                <br><span>At Flora, we don’t just build — we bring
+                    visions to life.</span>
+            </p>
+            <div>
+                <img src="./Images/w.png" class="hidden md:flex w-88 items-center">
+            </div>
+        </div>
+       
+    </section>
+
+
+
 </body>
 
 </html>
