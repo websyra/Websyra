@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Join With Us - Websyra</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- Poppins Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <style>
-    body {
-      font-family: 'Poppins', sans-serif;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Websyra</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
 </head>
-<body class="bg-yellow-50 min-h-screen flex items-center justify-center px-4">
-  <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+
+<body class="">
+
+    <!-- Navbar -->
+    <div class=" ">
+        <!-- In your <head> -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
     <div class="flex justify-between items-center p-3 ">
         <!-- Logo -->
         <div class="text-xl font-bold flex items-center gap-2">
@@ -36,12 +41,12 @@
             <nav
                 class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-10">
                 <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
-                    <li><a href="#" class="hover:text-yellow-600 transition">Home</a></li>
-                    <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
+                    <li><a href="index.html" class="hover:text-yellow-600 transition">Home</a></li>
+                    <li><a href="index.html#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
                     <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
                     <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
                     <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
-                    <li><a href="#" class="hover:text-yellow-600 transition">Login</a></li>
+                    <li><a href="login.html" class="hover:text-yellow-600 transition">Login</a></li>
                 </ul>
             </nav>
         </div>
@@ -50,7 +55,7 @@
         <ul class="hidden  md:flex flex-row gap-8  items-center ">
             <li>
                 
-                <a href="#aboutus" class="hover:text-yellow-600 hecked:text-yellow-600"><button class="btn btn-outline btn-warning">About Us</button></a>
+                <a href="index.html#aboutus" class="hover:text-yellow-600 hecked:text-yellow-600"><button class="btn btn-outline btn-warning">About Us</button></a>
             </li>
             <li
                 >
@@ -91,114 +96,153 @@
         </ul>
     </div>
 </nav>
+        
 
-  <div class="max-w-xl w-full bg-white p-8 rounded-2xl shadow-lg">
-    <h2 class="text-3xl font-bold text-center text-gray-800 mb-6">Join With Us</h2>
-    
-    <form class="space-y-5">
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Full Name</label>
-        <input type="text" placeholder="Your Name" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Email Address</label>
-        <input type="email" placeholder="you@example.com" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Phone Number</label>
-        <input type="tel" placeholder="+91 98765 43210" required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none" />
-      </div>
-
-      <div>
-        <label class="block mb-1 text-sm font-medium text-gray-700">Why do you want to join us?</label>
-        <textarea placeholder="Tell us something..." required
-          class="w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-yellow-400 focus:outline-none resize-none h-28"></textarea>
-      </div>
-
-      <button type="submit"
-        class="w-full bg-yellow-400 hover:bg-yellow-500 text-white font-semibold py-2 rounded-md transition duration-300">
-        Join Now
-      </button>
-    </form>
-  </div>
-
-
+<div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-lg">
+  <h2 class="text-3xl font-semibold text-center text-gray-800 mb-6 mt-24">Join with Us</h2>
   
-  <footer class="bg-yellow-100 mt-40 rounded-2xl px-6 sm:px-8 py-8 block md:py-10">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Get Help</h1>
-            <ul class="space-y-2">
-                <li><a href="#aboutus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">About us</a>
-                </li>
-                <li><a href="#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
-                        Services</a></li>
-                <li><a href="privacypolicy.html"
-                        class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy Policy</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Affiliate Program</a>
-                    <div
-                        class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                        <p class="font-medium">We are working on it.</p>
-                        <p class="text-gray-600">Sorry for the inconvenience!</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Collaboration</h1>
-            <ul class="space-y-2">
-                <li><a href="t&c.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Terms &
-                        Conditions</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Reviews</a>
-                    <div
-                        class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                        <p class="font-medium">We are working on it.</p>
-                        <p class="text-gray-600">Sorry for the inconvenience!</p>
-                    </div>
-                </li>
-                <li><a href="clientpolicy.html"
-                        class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Policies</a></li>
-                <li><a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Plans</a></li>
-            </ul>
-        </div>
-
-        <div>
-            <h1 class="text-2xl font-bold mb-4">More</h1>
-            <ul class="space-y-2">
-                <li><a href="#workwithus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Work With
-                        us</a></li>
-                <li><a href="joinform.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Join Our Team</a>
-                </li>
-                <li><a href="waw.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Who are
-                        We?</a></li>
-                <li><a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Suggestion Box</a>
-                </li>
-            </ul>
-        </div>
-
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Follow Us on</h1>
-            <div class="flex justify-center md:justify-start gap-4 mt-2">
-                <a href="https://www.instagram.com/websyra?igsh=NTUxNzJuenpyeXVh" target="_blank">
-                    <i class="fab fa-instagram text-xl"></i>
-                </a>
-                <a href="#" target="_blank">
-                    <i class="fab fa-linkedin text-xl"></i>
-                </a>
-            </div>
-        </div>
-
+  <form action="https://formspree.io/f/xanevzqb" method="POST" class="space-y-5">
+    <!-- Name -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Name</label>
+      <input placeholder="Enter Name" type="text" name="name" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
     </div>
-</footer>
+
+    <!-- Email -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Email</label>
+      <input placeholder="Enter email" type="email" name="email" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+    </div>
+
+    <!-- Mobile Number -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Mobile Number</label>
+      <input placeholder="Enter Mobile number" type="tel" name="mobile" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400" />
+    </div>
+
+    <!-- Role Dropdown -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Role</label>
+      <select name="role" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <option value="">-- Select Role --</option>
+        <option value="Student">Student</option>
+        <option value="Working Staff">Working Staff</option>
+        <option value="Freelancer">Freelancer</option>
+        <option value="Freelancer">Others</option>
+
+      </select>
+    </div>
+
+    <!-- Specialised In Dropdown -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Specialised In</label>
+      <select name="specialised" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400">
+        <option value="">-- Select Specialisation --</option>
+        <option value="Frontend">Frontend</option>
+        <option value="Backend">Backend</option>
+        <option value="Android App Development">Android App Development</option>
+        <option value="Flutter">Flutter</option>
+        <option value="Figma">Figma</option>
+        <option value="WordPress">WordPress</option>
+        <option value="Wix">Wix</option>
+        <option value="Wix">Others</option>
+      </select>
+    </div>
+
+    <!-- Message -->
+    <div>
+      <label class="block mb-1 text-sm font-medium text-gray-700">Message</label>
+      <textarea name="message" rows="4" required class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-400"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+      <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 rounded-lg transition duration-300">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
+
+
+        <!-- Footer -->
+        <footer class="bg-yellow-100 mt-40 mb-0 rounded-t-2xl px-6 sm:px-8 py-8 md:py-10 overflow-hidden">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+      
+              <!-- Get Help Section -->
+              <div>
+                  <h1 class="text-2xl font-bold mb-4">Get Help</h1>
+                  <ul class="space-y-2">
+                      <li><a href="index.html#aboutus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">About
+                              us</a></li>
+                      <li><a href="index.html#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
+                              Services</a></li>
+                      <li><a href="privacypolicy.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy
+                              Policy</a></li>
+                      <li class="relative group">
+                          <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Affiliate Program</a>
+                          <div
+                              class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                              <p class="font-medium">We are working on it.</p>
+                              <p class="text-gray-600">Sorry for the inconvenience!</p>
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+      
+              <!-- Collaboration Section -->
+              <div>
+                  <h1 class="text-2xl font-bold mb-4">Collaboration</h1>
+                  <ul class="space-y-2">
+                      <li><a href="t&c.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Terms &
+                              Conditions</a></li>
+                      <li class="relative group">
+                          <a href="#" class="hidden md:inline-block hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Reviews</a>
+                          <div
+                              class="hidden md:inline-block absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                              <p class="font-medium">We are working on it.</p>
+                              <p class="text-gray-600">Sorry for the inconvenience!</p>
+                          </div>
+                      </li>
+                      <li><a href="clientpolicy.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client
+                              Policies</a></li>
+                      <li><a href="index.html#plan" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Plans</a>
+                      </li>
+                  </ul>
+              </div>
+      
+              <!-- More Section -->
+              <div>
+                  <h1 class="text-2xl font-bold mb-4">More</h1>
+                  <ul class="space-y-2">
+                      <li><a href="index.html#workwithus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Work
+                              With us</a></li>
+                      <li><a href="joinform.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Join Our
+                              Team</a></li>
+                      <li><a href="waw.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Who are We?</a>
+                      </li>
+                  </ul>
+              </div>
+      
+              <!-- Follow Us Section -->
+              <div>
+                  <h1 class="text-2xl font-bold mb-4">Follow Us on</h1>
+                  <div class="flex justify-center md:justify-start gap-4 mt-2">
+                      <a href="https://www.instagram.com/websyra.in?igsh=eGE4NXpjY2I5amRp" target="_blank">
+                          <i class="fab fa-instagram text-xl"></i>
+                      </a>
+                      <a href="#" target="_blank">
+                          <i class="fab fa-linkedin text-xl"></i>
+                      </a>
+                  </div>
+              </div>
+      
+          </div>
+      </footer>
+
+
+
 
 </body>
+
 </html>
