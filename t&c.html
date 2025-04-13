@@ -15,246 +15,266 @@
 
     <!-- Navbar -->
     <div class=" ">
-       <!-- In your <head> -->
-<script src="https://cdn.tailwindcss.com"></script>
+        <!-- In your <head> -->
+        <script src="https://cdn.tailwindcss.com"></script>
 
-<nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
-  <div class="flex justify-between items-center p-4">
-    <!-- Logo -->
-    <div class="text-xl font-bold flex items-center gap-2">
-      <img src="./Images/nav1logo.jpg" class="w-36 md:w-48" alt="Logo">
-    </div>
+        <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+            <div class="flex justify-between items-center p-4">
+                <!-- Logo -->
+                <div class="text-xl font-bold flex items-center gap-2">
+                    <a href="index.html"><img src="./Images/nav1logo.jpg" class="w-36 md:w-48" alt="Logo"></a>                </div>
 
-    <!-- Hamburger (Mobile Only) -->
-    <div class="md:hidden relative">
-      <input type="checkbox" id="menu-toggle" class="peer hidden">
-      <label for="menu-toggle" class="flex flex-col gap-1 cursor-pointer">
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:rotate-45 peer-checked:translate-y-1.5"></span>
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:opacity-0"></span>
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-1.5"></span>
-      </label>
+                <!-- Hamburger (Mobile Only) -->
+                <div class="md:hidden relative">
+                    <input type="checkbox" id="menu-toggle" class="peer hidden">
+                    <label for="menu-toggle" class="flex flex-col gap-1 cursor-pointer">
+                        <span
+                            class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:rotate-45 peer-checked:translate-y-1.5"></span>
+                        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:opacity-0"></span>
+                        <span
+                            class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-1.5"></span>
+                    </label>
 
-      <!-- Mobile Menu -->
-      <nav class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-50">
-        <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
-          <li><a href="#home" class="hover:text-yellow-600 transition">Home</a></li>
-          <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
-          <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
-          <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
-          <li><a href="#" class="hover:text-yellow-600 transition">Login</a></li>
-        </ul>
-      </nav>
+                    <!-- Mobile Menu -->
+                    <nav
+                        class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-50">
+                        <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
+                            <li><a href="#home" class="hover:text-yellow-600 transition">Home</a></li>
+                            <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
+                            <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
+                            <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
+                            <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
+                            <li><a href="#" class="hover:text-yellow-600 transition">Login</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <!-- Desktop Menu -->
+                <ul class="hidden md:flex flex-row gap-5 items-center">
+                    <li
+                        class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                        <a href="#aboutus">About Us</a>
+                    </li>
+                    <li
+                        class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                        <a href="contact.html">Contact Us</a>
+                    </li>
+                    <li
+                        class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                        <a href="ourproj.html">Our Projects</a>
+                    </li>
+                    <li
+                        class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                        <a href="waw.html">Who Are We?</a>
+                    </li>
+                    <li
+                        class="border-2 border-white bg-gray-800 text-yellow-400 p-2 px-4 rounded-full cursor-pointer hover:bg-black transition">
+                        <a href="#">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
     </div>
 
     <!-- Desktop Menu -->
     <ul class="hidden md:flex flex-row gap-5 items-center">
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="#aboutus">About Us</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="contact.html">Contact Us</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="ourproj.html">Our Projects</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="waw.html">Who Are We?</a>
-      </li>
-      <li class="border-2 border-white bg-gray-800 text-yellow-400 p-2 px-4 rounded-full cursor-pointer hover:bg-black transition">
-        <a href="#">Login</a>
-      </li>
+        <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+            <a href="#aboutus">About Us</a>
+        </li>
+        <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+            <a href="contact.html">Contact Us</a>
+        </li>
+        <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+            <a href="ourproj.html">Our Projects</a>
+        </li>
+        <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+            <a href="waw.html">Who Are We?</a>
+        </li>
+        <li
+            class="border-2 border-white bg-gray-800 text-yellow-400 p-2 px-4 rounded-full cursor-pointer hover:bg-black transition">
+            <a href="#">Login</a>
+        </li>
     </ul>
-  </div>
-</nav>
+    </div>
+    </nav>
 
-              </div>
-          
-              <!-- Desktop Menu -->
-              <ul class="hidden md:flex flex-row gap-5 items-center">
-                <li
-                  class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                  <a href="#aboutus">About Us</a>
-                </li>
-                <li
-                  class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                  <a href="contact.html">Contact Us</a>
-                </li>
-                <li
-                  class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                  <a href="ourproj.html">Our Projects</a>
-                </li>
-                <li
-                  class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                  <a href="waw.html">Who Are We?</a>
-                </li>
-                <li
-                  class="border-2 border-white bg-gray-800 text-yellow-400 p-2 px-4 rounded-full cursor-pointer hover:bg-black transition">
-                  <a href="#">Login</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        
-        <!-- cards -->
+    <!-- cards -->
 
-        <section>
-            <section class="bg-white py-16 px-6 md:px-16 lg:px-24 text-gray-800 mt-20">
-                <div class="max-w-4xl mx-auto">
-                  <h1 class="text-4xl font-bold mb-4 text-center">Websyra – Terms & Conditions</h1>
-                  <p class="text-sm text-center text-gray-500 mb-10">Last Updated: 14.04.2025</p>
-              
-                  <div class="space-y-8">
+    <section>
+        <section class="bg-white py-16 px-6 md:px-16 lg:px-24 text-gray-800 mt-20">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="text-4xl font-bold mb-4 text-center">Websyra – Terms & Conditions</h1>
+                <p class="text-sm text-center text-gray-500 mb-10">Last Updated: 14.04.2025</p>
+
+                <div class="space-y-8">
                     <p class="text-lg leading-relaxed">
-                      Welcome to Websyra. Please read these Terms and Conditions ("Terms") carefully before using our website or services. These Terms explain the rules and guidelines that apply when you use Websyra, purchase digital products, or interact with any of our content. By accessing or using our services, you agree to follow these terms.
+                        Welcome to Websyra. Please read these Terms and Conditions ("Terms") carefully before using our
+                        website or services. These Terms explain the rules and guidelines that apply when you use
+                        Websyra, purchase digital products, or interact with any of our content. By accessing or using
+                        our services, you agree to follow these terms.
                     </p>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">1. Acceptance of Terms</h2>
-                      <p>By using Websyra, you agree to comply with and be legally bound by these Terms. If you do not agree to any part of them, please do not use our platform.</p>
+                        <h2 class="text-2xl font-semibold mb-2">1. Acceptance of Terms</h2>
+                        <p>By using Websyra, you agree to comply with and be legally bound by these Terms. If you do not
+                            agree to any part of them, please do not use our platform.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">2. Intellectual Property</h2>
-                      <p>All digital products, designs, templates, and content available on Websyra are the exclusive property of Websyra or its licensors. You may not:</p>
-                      <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>Copy</li>
-                        <li>Reproduce</li>
-                        <li>Distribute</li>
-                        <li>Modify</li>
-                        <li>Create derivative works</li>
-                        <li>Sell or resell our products</li>
-                      </ul>
-                      <p class="mt-2">...without prior written permission. Any unauthorized use may result in legal action.</p>
+                        <h2 class="text-2xl font-semibold mb-2">2. Intellectual Property</h2>
+                        <p>All digital products, designs, templates, and content available on Websyra are the exclusive
+                            property of Websyra or its licensors. You may not:</p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>Copy</li>
+                            <li>Reproduce</li>
+                            <li>Distribute</li>
+                            <li>Modify</li>
+                            <li>Create derivative works</li>
+                            <li>Sell or resell our products</li>
+                        </ul>
+                        <p class="mt-2">...without prior written permission. Any unauthorized use may result in legal
+                            action.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">3. Payments and Pricing</h2>
-                      <p>All prices are clearly listed with each product. By purchasing, you agree to:</p>
-                      <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>Pay the listed price using a valid payment method</li>
-                        <li>Provide accurate billing information</li>
-                      </ul>
-                      <p class="mt-2">Once payment is confirmed, you will receive access to the digital product. Since our items are digital, all sales are final—no refunds or exchanges are offered.</p>
+                        <h2 class="text-2xl font-semibold mb-2">3. Payments and Pricing</h2>
+                        <p>All prices are clearly listed with each product. By purchasing, you agree to:</p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>Pay the listed price using a valid payment method</li>
+                            <li>Provide accurate billing information</li>
+                        </ul>
+                        <p class="mt-2">Once payment is confirmed, you will receive access to the digital product. Since
+                            our items are digital, all sales are final—no refunds or exchanges are offered.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">4. Usage License</h2>
-                      <p>When you purchase a product from Websyra, you are granted a personal, non-transferable license to use it. This means:</p>
-                      <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>You can use the product for personal or commercial projects, depending on the license type stated.</li>
-                        <li>You cannot redistribute, resell, or claim the work as your own.</li>
-                      </ul>
-                      <p class="mt-2">Violating this license may lead to termination of your rights and further legal steps.</p>
+                        <h2 class="text-2xl font-semibold mb-2">4. Usage License</h2>
+                        <p>When you purchase a product from Websyra, you are granted a personal, non-transferable
+                            license to use it. This means:</p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>You can use the product for personal or commercial projects, depending on the license
+                                type stated.</li>
+                            <li>You cannot redistribute, resell, or claim the work as your own.</li>
+                        </ul>
+                        <p class="mt-2">Violating this license may lead to termination of your rights and further legal
+                            steps.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">5. User Responsibilities</h2>
-                      <p>You agree not to misuse the platform or its content in any way. This includes:</p>
-                      <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>Avoiding illegal activities</li>
-                        <li>Not attempting to hack or reverse-engineer the website</li>
-                        <li>Respecting copyright and ownership</li>
-                        <li>Not sharing your download links with others</li>
-                      </ul>
-                      <p class="mt-2">We reserve the right to take appropriate actions, including suspending your access, if misuse is detected.</p>
+                        <h2 class="text-2xl font-semibold mb-2">5. User Responsibilities</h2>
+                        <p>You agree not to misuse the platform or its content in any way. This includes:</p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>Avoiding illegal activities</li>
+                            <li>Not attempting to hack or reverse-engineer the website</li>
+                            <li>Respecting copyright and ownership</li>
+                            <li>Not sharing your download links with others</li>
+                        </ul>
+                        <p class="mt-2">We reserve the right to take appropriate actions, including suspending your
+                            access, if misuse is detected.</p>
                     </div>
-              as i said already we are try ing to join with students etc, so create a page that includee its info and indicate a mail id to enquire
+                    as i said already we are try ing to join with students etc, so create a page that includee its info
+                    and indicate a mail id to enquire
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">6. Changes to Terms</h2>
-                      <p>Websyra reserves the right to update or modify these Terms at any time. Changes will be effective immediately after they are posted. It’s your responsibility to review these terms regularly.</p>
+                        <h2 class="text-2xl font-semibold mb-2">6. Changes to Terms</h2>
+                        <p>Websyra reserves the right to update or modify these Terms at any time. Changes will be
+                            effective immediately after they are posted. It’s your responsibility to review these terms
+                            regularly.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">7. Limitation of Liability</h2>
-                      <p>We do our best to provide high-quality digital products. However, Websyra shall not be held liable for:</p>
-                      <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
-                        <li>Any direct or indirect damages from using our products</li>
-                        <li>Technical issues or delays</li>
-                        <li>Loss of data or profits</li>
-                      </ul>
-                      <p class="mt-2">All products are provided “as is” without warranties of any kind.</p>
+                        <h2 class="text-2xl font-semibold mb-2">7. Limitation of Liability</h2>
+                        <p>We do our best to provide high-quality digital products. However, Websyra shall not be held
+                            liable for:</p>
+                        <ul class="list-disc list-inside mt-2 ml-4 space-y-1">
+                            <li>Any direct or indirect damages from using our products</li>
+                            <li>Technical issues or delays</li>
+                            <li>Loss of data or profits</li>
+                        </ul>
+                        <p class="mt-2">All products are provided “as is” without warranties of any kind.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">8. Governing Law</h2>
-                      <p>These Terms are governed by and interpreted in accordance with the laws of India.</p>
+                        <h2 class="text-2xl font-semibold mb-2">8. Governing Law</h2>
+                        <p>These Terms are governed by and interpreted in accordance with the laws of India.</p>
                     </div>
-              
+
                     <div>
-                      <h2 class="text-2xl font-semibold mb-2">9. Contact Us</h2>
-                      <p>Have questions or concerns? Reach out to us at: <a href="mailto:Websyra.in@gmail.com" class="text-blue-600 underline">Websyra.in@gmail.com</a>. We’ll be happy to help you!</p>
+                        <h2 class="text-2xl font-semibold mb-2">9. Contact Us</h2>
+                        <p>Have questions or concerns? Reach out to us at: <a href="mailto:Websyra.in@gmail.com"
+                                class="text-blue-600 underline">Websyra.in@gmail.com</a>. We’ll be happy to help you!
+                        </p>
                     </div>
-                  </div>
                 </div>
-              </section>
-              
-              
+            </div>
         </section>
 
 
-        <!-- Footer -->
-        <Footer class="grid grid-cols-2 gap-2 p-8  md:flex justify-around  mt-40 bg-yellow-100 m-5 rounded-2xl p-10 ">
-            <div>
-                <h1 class="text-2xl font-bold mb-4 ">Get Help</h1>
-                <ul class="w-48 md:ml-4  leading-relaxed  ">
+    </section>
 
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300  ">About
-                            us</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Our
-                            Services</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Privacy
-                            Policy</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Affiliate
-                            Program</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold mb-4 ">Collaboration</h1>
-                <ul class="w-48 md:ml-4 leading-relaxed ">
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Terms
-                            And Conditions</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
-                            Reviews</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
-                            Policies</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Plans</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold mb-4 "><a href="#"></a>More</a></h1>
-                <ul class="w-48 md:ml-4 leading-relaxed ">
 
-                    <li class="p-2"><a href="#" class="cursor-pointer  p-2 hover:bg-yellow-50  rounded-3xl ">Work With
-                            us</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Join
-                            Our team</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Who
-                            are We?</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Suggestion
-                            Box</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold w-44 md:font-bold mb-4 ">
-                    Follow Us on
-                </h1>
-                <i class="fa-brands fa-instagram ml-5 cursor-pointer" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin ml-1 cursor-pointer" style="color: #000000;"></i>
-            </div>
-        </Footer>
+    <!-- Footer -->
+    <Footer class="grid grid-cols-2 gap-2 p-8  md:flex justify-around  mt-40 bg-yellow-100 m-5 rounded-2xl p-10 ">
+        <div>
+            <h1 class="text-2xl font-bold mb-4 ">Get Help</h1>
+            <ul class="w-48 md:ml-4  leading-relaxed  ">
+
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300  ">About
+                        us</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Our
+                        Services</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Privacy
+                        Policy</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Affiliate
+                        Program</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mb-4 ">Collaboration</h1>
+            <ul class="w-48 md:ml-4 leading-relaxed ">
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Terms
+                        And Conditions</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
+                        Reviews</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
+                        Policies</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Plans</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold mb-4 "><a href="#"></a>More</a></h1>
+            <ul class="w-48 md:ml-4 leading-relaxed ">
+
+                <li class="p-2"><a href="#" class="cursor-pointer  p-2 hover:bg-yellow-50  rounded-3xl ">Work With
+                        us</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Join
+                        Our team</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Who
+                        are We?</a></li>
+                <li class="p-2"><a href="#"
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Suggestion
+                        Box</a></li>
+            </ul>
+        </div>
+        <div>
+            <h1 class="text-2xl font-bold w-44 md:font-bold mb-4 ">
+                Follow Us on
+            </h1>
+            <i class="fa-brands fa-instagram ml-5 cursor-pointer" style="color: #000000;"></i>
+            <i class="fa-brands fa-linkedin ml-1 cursor-pointer" style="color: #000000;"></i>
+        </div>
+    </Footer>
 
 
 
