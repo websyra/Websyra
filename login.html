@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login-Websyra</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Websyra</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Add this to your <head> -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- Then use this in your script -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body class="bg-yellow-50 flex items-center justify-center h-screen">
 
@@ -21,7 +29,7 @@
     </div>
     <h2 class="text-2xl font-bold text-center text-gray-800 mb-4">Welcome Back !</h2>
 
-    <form action="/login" method="POST" class="space-y-4">
+    <form id="login" class="space-y-4">
       <div>
         <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
         <input type="email" name="email" required
@@ -50,6 +58,20 @@
    
     </p>
   </div>
-
+  <script>
+    // Simulate user not logged in
+    const isAuthenticated = false; // Change to true to simulate login
+  
+    if (!isAuthenticated) {
+      Swal.fire({
+        icon: 'error',
+        title: 'Unauthorized Access',
+        text: 'Contact info@websyra.in',
+        confirmButtonText: 'Go to Login',
+        confirmButtonColor: '#facc15'
+      })
+    }
+  </script>
+  
 </body>
 </html>

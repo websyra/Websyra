@@ -1,7 +1,7 @@
 document.getElementById("contact-form").addEventListener('submit',function(event){
     event.preventDefault();
     var data = new FormData(event.target);
-    fetch("https://formspree.io/f/xpwpbnjw",{
+    fetch("",{
         method:'POST',
         body:data,
     }).then(response=>{

@@ -19,52 +19,81 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
-  <div class="flex justify-between items-center p-4">
-    <!-- Logo -->
-    <div class="text-xl font-bold flex items-center gap-2">
-        <a href="index.html"><img src="./Images/nav1logo.jpg" class="w-36 md:w-48" alt="Logo"></a>    </div>
+    <div class="flex justify-between items-center p-3 ">
+        <!-- Logo -->
+        <div class="text-xl font-bold flex items-center gap-2">
+            <a href="index.html"><img src="./Images/nav1l.png" class="w-36 md:w-48" alt="Logo"></a>
+        </div>
 
-    <!-- Hamburger (Mobile Only) -->
-    <div class="md:hidden relative">
-      <input type="checkbox" id="menu-toggle" class="peer hidden">
-      <label for="menu-toggle" class="flex flex-col gap-1 cursor-pointer">
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:rotate-45 peer-checked:translate-y-1.5"></span>
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:opacity-0"></span>
-        <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-1.5"></span>
-      </label>
+        <!-- Hamburger Icon (Mobile Only) -->
+        <div class="md:hidden relative">
+            <input type="checkbox" id="menu-toggle" class="peer hidden">
+            <label for="menu-toggle" class="flex flex-col gap-1 cursor-pointer">
+                <span
+                    class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:rotate-45 peer-checked:translate-y-1.5"></span>
+                <span class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:opacity-0"></span>
+                <span
+                    class="block w-6 h-0.5 bg-gray-800 transition duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-1.5"></span>
+            </label>
 
-      <!-- Mobile Menu -->
-      <nav class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-50">
-        <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
-          <li><a href="#home" class="hover:text-yellow-600 transition">Home</a></li>
-          <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
-          <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
-          <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
-          <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
-          <li><a href="#" class="hover:text-yellow-600 transition">Login</a></li>
+            <!-- Mobile Menu -->
+            <nav
+                class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-10">
+                <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
+                    <li><a href="#" class="hover:text-yellow-600 transition">Home</a></li>
+                    <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
+                    <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
+                    <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
+                    <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
+                    <li><a href="#" class="hover:text-yellow-600 transition">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Desktop Menu -->
+        <ul class="hidden  md:flex flex-row gap-8  items-center ">
+            <li>
+                
+                <a href="#aboutus" class="hover:text-yellow-600 hecked:text-yellow-600"><button class="btn btn-outline btn-warning">About Us</button></a>
+            </li>
+            <li
+                >
+                <a href="contact.html" class="hover:text-yellow-600 hecked:text-yellow-600">Contact Us</a>
+            </li>
+            <li
+               >
+                <a href="ourproj.html" class="hover:text-yellow-600 hecked:text-yellow-600">Our Projects</a>
+            </li>
+            <li
+                >
+                <a href="waw.html" class="hover:text-yellow-600 hecked:text-yellow-600">Who Are We?</a>
+            </li>
+            <a href="login.html">
+                <li>
+
+                    <button class="relative inline-flex items-center font-medium text-[15px] tracking-wide rounded-[0.8em] cursor-pointer border-none 
+            text-[ghostwhite] overflow-hidden bg-gradient-to-r from-yellow-400 to-yellow-600 
+            active:scale-95 transition-transform duration-300 group">
+                        <!-- Skewed black overlay animation -->
+                        <span class="absolute top-0 left-0 w-[120%] h-full bg-black skew-x-[30deg] -left-[10%] transition-transform duration-[400ms] 
+              ease-[cubic-bezier(0.3,1,0.8,1)] z-0 group-hover:translate-x-full"></span>
+
+                        <!-- Button content -->
+                        <span class="relative z-10 flex items-center px-3 py-2 transition-colors duration-400">
+                            <svg class="w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                            Login
+                        </span>
+                    </button>
+
+
+                </li>
+            </a>
         </ul>
-      </nav>
     </div>
-
-    <!-- Desktop Menu -->
-    <ul class="hidden md:flex flex-row gap-5 items-center">
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="#aboutus">About Us</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="contact.html">Contact Us</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="ourproj.html">Our Projects</a>
-      </li>
-      <li class="px-6 py-3 border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-        <a href="waw.html">Who Are We?</a>
-      </li>
-      <li class="border-2 border-white bg-gray-800 text-yellow-400 p-2 px-4 rounded-full cursor-pointer hover:bg-black transition">
-        <a href="#">Login</a>
-      </li>
-    </ul>
-  </div>
 </nav>
 
         
@@ -156,68 +185,76 @@
 
 
         <!-- Footer -->
-        <Footer class="grid grid-cols-2 gap-2 p-8  md:flex justify-around  mt-40 bg-yellow-100 m-5 rounded-2xl p-10 ">
-            <div>
-                <h1 class="text-2xl font-bold mb-4 ">Get Help</h1>
-                <ul class="w-48 md:ml-4  leading-relaxed  ">
-
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300  ">About
-                            us</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Our
-                            Services</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Privacy
-                            Policy</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Affiliate
-                            Program</a></li>
-                </ul>
+        <footer class="bg-yellow-100 mt-40 rounded-2xl px-6 sm:px-8 py-8 md:py-10">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+    
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">Get Help</h1>
+                    <ul class="space-y-2">
+                        <li><a href="#aboutus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">About us</a>
+                        </li>
+                        <li><a href="#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
+                                Services</a></li>
+                        <li><a href="privacypolicy.html"
+                                class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy Policy</a></li>
+                        <li class="relative group">
+                            <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Affiliate Program</a>
+                            <div
+                                class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                                <p class="font-medium">We are working on it.</p>
+                                <p class="text-gray-600">Sorry for the inconvenience!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">Collaboration</h1>
+                    <ul class="space-y-2">
+                        <li><a href="t&c.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Terms &
+                                Conditions</a></li>
+                        <li class="relative group">
+                            <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Reviews</a>
+                            <div
+                                class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                                <p class="font-medium">We are working on it.</p>
+                                <p class="text-gray-600">Sorry for the inconvenience!</p>
+                            </div>
+                        </li>
+                        <li><a href="clientpolicy.html"
+                                class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Policies</a></li>
+                        <li><a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Plans</a></li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">More</h1>
+                    <ul class="space-y-2">
+                        <li><a href="#workwithus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Work With
+                                us</a></li>
+                        <li><a href="joinform.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Join Our Team</a>
+                        </li>
+                        <li><a href="waw.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Who are
+                                We?</a></li>
+                        <li><a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Suggestion Box</a>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div>
+                    <h1 class="text-2xl font-bold mb-4">Follow Us on</h1>
+                    <div class="flex justify-center md:justify-start gap-4 mt-2">
+                        <a href="https://www.instagram.com/websyra?igsh=NTUxNzJuenpyeXVh" target="_blank">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" target="_blank">
+                            <i class="fab fa-linkedin text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+    
             </div>
-            <div>
-                <h1 class="text-2xl font-bold mb-4 ">Collaboration</h1>
-                <ul class="w-48 md:ml-4 leading-relaxed ">
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Terms
-                            And Conditions</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
-                            Reviews</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
-                            Policies</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Plans</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold mb-4 "><a href="#"></a>More</a></h1>
-                <ul class="w-48 md:ml-4 leading-relaxed ">
-
-                    <li class="p-2"><a href="#" class="cursor-pointer  p-2 hover:bg-yellow-50  rounded-3xl ">Work With
-                            us</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Join
-                            Our team</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Who
-                            are We?</a></li>
-                    <li class="p-2"><a href="#"
-                            class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Suggestion
-                            Box</a></li>
-                </ul>
-            </div>
-            <div>
-                <h1 class="text-2xl font-bold w-44 md:font-bold mb-4 ">
-                    Follow Us on
-                </h1>
-                <i class="fa-brands fa-instagram ml-5 cursor-pointer" style="color: #000000;"></i>
-                <i class="fa-brands fa-linkedin ml-1 cursor-pointer" style="color: #000000;"></i>
-            </div>
-        </Footer>
-
+        </footer>
 
 
 
