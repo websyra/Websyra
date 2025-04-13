@@ -7,40 +7,39 @@
     <title>Websyra</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
-<body class="font-sans">
+<body class="" >
 
     <!-- Navbar -->
-    <div class="">
-        <nav>
-            <div class="flex justify-between p-4 shadow items-center sticky">
-                <h1 class="text-4xl font-bold ml-4">Websyra</h1>
-                <div class=" lg:hidden"><i class="fa-solid fa-bars " style="color: #000000;"></i></div>
-                <ul class="hidden lg:flex flex-row gap-5 mr-4  ">
-                    <li
-                        class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                        About us</li>
-                    <li
-                        class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                        Contact US</li>
-                    <li
-                        class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                        Our Projects</li>
-                    <li
-                        class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
-                        Who are We?</li>
-                    <li
-                        class="border-2 border-white bg-gray-700 text-white p-2 pl-4 pr-4 rounded cursor-pointer hover:bg-black  ">
-                        Login</li>
-                </ul>
+    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+        <div class="flex justify-between p-4 items-center">
+            <h1 class="text-4xl font-bold ml-4">Websyra</h1>
+            <div class="lg:hidden">
+                <i class="fa-solid fa-bars" style="color: #000000;"></i>
             </div>
-        </nav>
+            <ul class="hidden lg:flex flex-row gap-5 mr-4">
+                <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                    <a href="#aboutus">About us</a></li>
+                <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                  <a href="contact.html">  Contact US</a></li>
+                <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                   <a href="ourproj.html"> Our Projects</a></li>
+                <li class="px-6 py-3 bg-white border border-gray-400 rounded-full text-gray-800 hover:bg-gray-100 transition">
+                   <a href="waw.html"> Who are We?</a></li>
+                <li class="border-2 border-white bg-gray-700 text-white p-2 pl-4 pr-4 rounded cursor-pointer hover:bg-black">
+                    Login</li>
+            </ul>
+        </div>
+    </nav>
+    
 
-
-        <section class="bg-yellow-50 pt-20 pb-40">
+        <section class="beige pt-20 pb-40">
             <div class="text-center">
                 <h1 class="text-5xl lg:text-9xl mt-32 font-semibold mb-6">
                     Let's bring <br /> your vision <br /> to <span class="text-yellow-500">life</span>
@@ -151,7 +150,7 @@
     <!-- About us -->
 
 
-    <section class="p-10">
+    <section class="p-10" id="aboutus">
         <h1 class="font-bold text-3xl text-center mt-24 ">About us</h1>
         <div class=" text-center  md:flex justify-center items-center">
 
@@ -176,7 +175,7 @@
 
 
     <!-- Footer -->
-    <Footer class="grid grid-cols-2 gap-2 p-8  md:flex justify-around  mt-40 bg-yellow-100 ">
+    <Footer class="grid grid-cols-2 gap-2 p-8  md:flex justify-around  mt-40 bg-yellow-100 m-5 rounded-2xl p-10 ">
         <div>
             <h1 class="text-2xl font-bold mb-4 ">Get Help</h1>
             <ul class="w-48 md:ml-4  leading-relaxed  ">
@@ -199,8 +198,7 @@
             <h1 class="text-2xl font-bold mb-4 ">Collaboration</h1>
             <ul class="w-48 md:ml-4 leading-relaxed ">
                 <li class="p-2"><a href="#"
-                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Terms
-                        And Conditions</a></li>
+                        class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Terms & Conditions</a></li>
                 <li class="p-2"><a href="#"
                         class="cursor-pointer p-2 hover:bg-yellow-50  rounded-3xl transition-colors duration-300 ">Client
                         Reviews</a></li>
