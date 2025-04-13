@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.js">
 </head>
 
 <body class="">
@@ -124,16 +125,16 @@
                 </div>
               </div>
       
-              <form class="space-y-4">
-                <input type='text' placeholder='Name'
+              <form class="space-y-4" id="contact-form" action="https://formspree.io/f/xpwpbnjw" method="post">
+                <input type='text' placeholder='Name' name="name"
                   class="w-full text-slate-900 rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
-                <input type='email' placeholder='Email'
+                <input type='email' placeholder='Email' name="email"
                   class="w-full text-slate-900 rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
-                <input type='text' placeholder='Subject'
+                <input type='text' placeholder='Subject' name="subject"
                   class="w-full text-slate-900 rounded-md py-2.5 px-4 border text-sm outline-none focus:border-blue-500" />
-                <textarea placeholder='Message' rows="6"
+                <textarea placeholder='Message' rows="6" name="message"
                   class="w-full text-slate-900 rounded-md px-4 border text-sm pt-2.5 outline-none focus:border-blue-500"></textarea>
-                <button type='button'
+                <button type='submit'
                   class="text-white bg-blue-500 hover:bg-blue-600 rounded-md text-[15px] font-medium px-4 py-2 w-full !mt-6">Send</button>
               </form>
             </div>
