@@ -12,6 +12,8 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!--Favicon-->
+    <link rel="icon" href="./Images/logo.png" type="image/png" />
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8" />
@@ -19,14 +21,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-   
+
 </head>
 
 <body class="">
     <html class="scroll-smooth">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50 " >
+    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50 ">
         <div class="flex justify-between items-center p-3 ">
             <!-- Logo -->
             <div class="text-xl font-bold flex items-center gap-2">
@@ -58,7 +60,7 @@
 
             <!-- Desktop Menu -->
             <ul class="hidden  md:flex flex-row gap-8  items-center ">
-                
+
                 <li>
                     <a href="contact.html" class="hover:text-yellow-600 hecked:text-yellow-600">Contact Us</a>
                 </li>
@@ -101,99 +103,114 @@
 
     <section class="beige relative pt-16 pb-40 overflow-hidden">
         <!-- Abstract Background Blobs -->
-        <div class="absolute top-0 left-0 w-80 h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-pulse -z-10"></div>
-        <div class="absolute top-40 right-0 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-spin-slow -z-10"></div>
-        <div class="absolute bottom-0 left-1/3 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow -z-10"></div>
-      
+        <div
+            class="absolute top-0 left-0 w-80 h-80 bg-yellow-100 rounded-full mix-blend-multiply filter blur-2xl opacity-30 animate-pulse -z-10">
+        </div>
+        <div
+            class="absolute top-40 right-0 w-96 h-96 bg-yellow-300 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-spin-slow -z-10">
+        </div>
+        <div
+            class="absolute bottom-0 left-1/3 w-72 h-72 bg-yellow-400 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-bounce-slow -z-10">
+        </div>
+
         <div class="text-center relative z-10 animate-entry">
-          <h1 class="text-5xl lg:text-9xl mt-32 font-semibold mb-6">
-            Let's bring <br /> your vision <br />
-            to <span class="text-yellow-600">life</span>
-          </h1>
-      
-          <a href="#plan">
-            <button
-              class="mt-10 text-center group relative h-16 w-64 border text-left p-3 text-black text-base font-bold rounded-lg overflow-hidden 
+            <h1 class="text-5xl lg:text-9xl mt-32 font-semibold mb-6">
+                Let's bring <br /> your vision <br />
+                to <span class="text-yellow-600">life</span>
+            </h1>
+
+            <a href="#plan">
+                <button class="mt-10 text-center group relative h-16 w-64 border text-left p-3 text-black text-base font-bold rounded-lg overflow-hidden 
               bg-gradient-to-r from-yellow-300 via-yellow-400 to-yellow-600
               hover:border-yellow-700 
               before:absolute before:w-12 before:h-12 before:content-[''] before:right-1 before:top-1 before:z-10 before:bg-yellow-300 before:rounded-full before:blur-lg
               after:absolute after:z-10 after:w-20 after:h-20 after:content-[''] after:bg-yellow-200 after:right-8 after:top-3 after:rounded-full after:blur-lg 
               before:duration-500 after:duration-500 group-hover:before:duration-500 group-hover:after:duration-500 hover:before:right-12 hover:before:-bottom-8 hover:after:-right-8 
               hover:before:[box-shadow:_20px_20px_20px_30px_#facc15]">
-              <span class="relative z-20">Get Started</span>
-            </button>
-          </a>
+                    <span class="relative z-20">Get Started</span>
+                </button>
+            </a>
         </div>
-        
+
         <style>
-          /* Define the translateY animation */
-          @keyframes translateYEntry {
-            0% {
-              transform: translateY(50px);
-              opacity: 0;
+            /* Define the translateY animation */
+            @keyframes translateYEntry {
+                0% {
+                    transform: translateY(50px);
+                    opacity: 0;
+                }
+
+                100% {
+                    transform: translateY(0);
+                    opacity: 1;
+                }
             }
-            100% {
-              transform: translateY(0);
-              opacity: 1;
+
+            /* Apply the animation to the content */
+            .animate-entry {
+                animation: translateYEntry 1s ease-out forwards;
             }
-          }
-      
-          /* Apply the animation to the content */
-          .animate-entry {
-            animation: translateYEntry 1s ease-out forwards;
-          }
         </style>
-      </section>
-      
+    </section>
 
 
 
-<!-- Services -->
-<!-- Services -->
-<section id="services" class="py-24 bg-gray-50">
-    <div class="container mx-auto px-4">
-        <h1 class="text-3xl lg:text-5xl text-center font-bold mb-20 text-gray-800">
-            Services Offered
-        </h1>
 
-        <!-- Row 1: 4 Cards -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 items-stretch">
-            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/appcard.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="App Development">
-                <h2 class="text-2xl font-bold mt-auto pb-8">App Development</h2>
+    <!-- Services -->
+    <!-- Services -->
+    <section id="services" class="py-24 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h1 class="text-3xl lg:text-5xl text-center font-bold mb-20 text-gray-800">
+                Services Offered
+            </h1>
+
+            <!-- Row 1: 4 Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 items-stretch">
+                <div
+                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/appcard.png" class="w-48 mx-auto mb-4 transition-transform duration-300"
+                        alt="App Development">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">App Development</h2>
+                </div>
+
+                <div
+                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/seo.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="SEO">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">Search Engine Optimization</h2>
+                </div>
+
+                <div
+                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/ui.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="UI/UX">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">UI/UX</h2>
+                </div>
+
+                <div
+                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/wbdev.png" class="w-48 mx-auto mb-4 transition-transform duration-300"
+                        alt="Web Development">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">Web Development</h2>
+                </div>
             </div>
 
-            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/seo.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="SEO">
-                <h2 class="text-2xl font-bold mt-auto pb-8">Search Engine Optimization</h2>
-            </div>
+            <!-- Row 2: 2 Centered Cards with same size as above -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
+                <div
+                    class="lg:col-start-2 border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/ecommerce.png" class="w-48 mx-auto mb-4 transition-transform duration-300"
+                        alt="E-Commerce">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">E-Commerce</h2>
+                </div>
 
-            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/ui.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="UI/UX">
-                <h2 class="text-2xl font-bold mt-auto pb-8">UI/UX</h2>
-            </div>
-
-            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/wbdev.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="Web Development">
-                <h2 class="text-2xl font-bold mt-auto pb-8">Web Development</h2>
+                <div
+                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                    <img src="./Images/erp.jpg" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="ERP">
+                    <h2 class="text-2xl font-bold mt-auto pb-8">ERP <br>
+                        ( Comming Soon)</h2>
+                </div>
             </div>
         </div>
-
-        <!-- Row 2: 2 Centered Cards with same size as above -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
-            <div class="lg:col-start-2 border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/ecommerce.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="E-Commerce">
-                <h2 class="text-2xl font-bold mt-auto pb-8">E-Commerce</h2>
-            </div>
-
-            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
-                <img src="./Images/erp.jpg" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="ERP">
-                <h2 class="text-2xl font-bold mt-auto pb-8">ERP <br>
-                    ( Comming Soon)</h2>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
@@ -213,13 +230,15 @@
             </div>
 
             <p class="mt-4 md:mt-6 text-xl md:ml-6 text-center md:text-left">
-                At Websyra, we empower students and developers through real-world projects in ERP, Full Stack, Mobile Apps, and UI/UX—helping them grow and build strong portfolios.
+                At Websyra, we empower students and developers through real-world projects in ERP, Full Stack, Mobile
+                Apps, and UI/UX—helping them grow and build strong portfolios.
 
                 <br><br>
-                
-                We create impactful digital solutions that blend creativity, technology, and strategy to deliver real value.
-                
-                
+
+                We create impactful digital solutions that blend creativity, technology, and strategy to deliver real
+                value.
+
+
 
 
             </p>
@@ -235,30 +254,32 @@
 
     <section id="workwithus" class="mt-10">
         <div>
-          <div class="border-2 m-10 rounded-2xl">
-            <h1 class="mt-10 text-4xl text-center font-bold">Join With Us</h1>
-      
-            <div class="flex justify-center items-center p-10">
-              <img src="./Images/wwu.png" class="w-72 mt-10">
-              <img src="./Images/eteam.png" class="w-72 mt-10 hidden lg:flex">
-              <img src="./Images/teamup.png" class="w-72 mt-10 hidden md:flex">
+            <div class="border-2 m-10 rounded-2xl">
+                <h1 class="mt-10 text-4xl text-center font-bold">Join With Us</h1>
+
+                <div class="flex justify-center items-center p-10">
+                    <img src="./Images/wwu.png" class="w-72 mt-10">
+                    <img src="./Images/eteam.png" class="w-72 mt-10 hidden lg:flex">
+                    <img src="./Images/teamup.png" class="w-72 mt-10 hidden md:flex">
+                </div>
+
+                <p class="flex justify-center p-10 text-center text-2xl ">
+                    Websyra gives student developers a head start—work on real projects, earn real money, and sharpen
+                    your skills in Full Stack, Mobile Apps, UI/UX, or ERP. Learn by doing, grow by building.
+                </p>
+
+                <!-- Centered Join with Us Button -->
+                <div class="flex justify-center pb-10">
+                    <a href="joinform.html"> <button
+                            class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
+                            Join with Us
+                        </button></a>
+                </div>
+
             </div>
-      
-            <p class="flex justify-center p-10 text-center text-2xl ">
-              Websyra gives student developers a head start—work on real projects, earn real money, and sharpen your skills in Full Stack, Mobile Apps, UI/UX, or ERP. Learn by doing, grow by building.
-            </p>
-      
-            <!-- Centered Join with Us Button -->
-            <div class="flex justify-center pb-10">
-             <a href="joinform.html"> <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300 transform hover:scale-105">
-                Join with Us
-              </button></a>
-            </div>
-      
-          </div>
         </div>
-      </section>
-      
+    </section>
+
     </section>
 
 
@@ -350,100 +371,107 @@
         </section>
     </body>
 
-</html>
+    </html>
 
 
 
-<!-- Footer -->
-<footer class="bg-yellow-100 mt-40 mb-0 rounded-t-2xl px-6 sm:px-8 py-8 md:py-10 overflow-hidden">
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
+    <!-- Footer -->
+    <footer class="bg-yellow-100 mt-40 mb-0 rounded-t-2xl px-6 sm:px-8 py-8 md:py-10 overflow-hidden">
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
 
-        <!-- Get Help Section -->
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Get Help</h1>
-            <ul class="space-y-2">
-              
-                <li><a href="index.html#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
-                        Services</a></li>
-                <li><a href="privacypolicy.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy
-                        Policy</a></li>
-                <li class="relative group">
-                    <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Affiliate Program</a>
-                    <div
-                        class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                        <p class="font-medium">We are working on it.</p>
-                        <p class="text-gray-600">Sorry for the inconvenience!</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
+            <!-- Get Help Section -->
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Get Help</h1>
+                <ul class="space-y-2">
 
-        <!-- Collaboration Section -->
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Collaboration</h1>
-            <ul class="space-y-2">
-                <li><a href="t&c.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Terms &
-                        Conditions</a></li>
-                <li class="relative group">
-                    <a href="#" class="hidden md:inline-block hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client Reviews</a>
-                    <div
-                        class="hidden md:inline-block absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
-                        <p class="font-medium">We are working on it.</p>
-                        <p class="text-gray-600">Sorry for the inconvenience!</p>
-                    </div>
-                </li>
-                <li><a href="clientpolicy.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client
-                        Policies</a></li>
-                <li><a href="index.html#plan" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Plans</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- More Section -->
-        <div>
-            <h1 class="text-2xl font-bold mb-4">More</h1>
-            <ul class="space-y-2">
-                <li><a href="index.html#workwithus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Work
-                        With us</a></li>
-                <li><a href="joinform.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Join Our
-                        Team</a></li>
-                <li><a href="waw.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Who are We?</a>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Follow Us Section -->
-        <div>
-            <h1 class="text-2xl font-bold mb-4">Follow Us on</h1>
-            <div class="flex justify-center md:justify-start gap-4 mt-2">
-                <a href="https://www.instagram.com/websyra.in?igsh=eGE4NXpjY2I5amRp" target="_blank">
-                    <i class="fab fa-instagram text-xl"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/websyra/" target="_blank">
-                    <i class="fab fa-linkedin text-xl"></i>
-                </a>
+                    <li><a href="index.html#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
+                            Services</a></li>
+                    <li><a href="privacypolicy.html"
+                            class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy
+                            Policy</a></li>
+                    <li class="relative group">
+                        <a href="#" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Affiliate Program</a>
+                        <div
+                            class="absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                            <p class="font-medium">We are working on it.</p>
+                            <p class="text-gray-600">Sorry for the inconvenience!</p>
+                        </div>
+                    </li>
+                </ul>
             </div>
+
+            <!-- Collaboration Section -->
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Collaboration</h1>
+                <ul class="space-y-2">
+                    <li><a href="t&c.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Terms &
+                            Conditions</a></li>
+                    <li class="relative group">
+                        <a href="#"
+                            class="hidden md:inline-block hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client
+                            Reviews</a>
+                        <div
+                            class="hidden md:inline-block absolute left-1/2 -translate-x-1/2 mt-2 w-64 p-4 bg-white border border-gray-300 text-sm rounded shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-50">
+                            <p class="font-medium">We are working on it.</p>
+                            <p class="text-gray-600">Sorry for the inconvenience!</p>
+                        </div>
+                    </li>
+                    <li><a href="clientpolicy.html"
+                            class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Client
+                            Policies</a></li>
+                    <li><a href="index.html#plan"
+                            class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Plans</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- More Section -->
+            <div>
+                <h1 class="text-2xl font-bold mb-4">More</h1>
+                <ul class="space-y-2">
+                    <li><a href="index.html#workwithus"
+                            class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Work
+                            With us</a></li>
+                    <li><a href="joinform.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Join Our
+                            Team</a></li>
+                    <li><a href="waw.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Who are
+                            We?</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Follow Us Section -->
+            <div>
+                <h1 class="text-2xl font-bold mb-4">Follow Us on</h1>
+                <div class="flex justify-center md:justify-start gap-4 mt-2">
+                    <a href="https://www.instagram.com/websyra.in?igsh=eGE4NXpjY2I5amRp" target="_blank">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/websyra/" target="_blank">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
-
-    </div>
-</footer>
+    </footer>
 
 
 
-<script>
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-      e.preventDefault();
-      const target = document.querySelector(this.getAttribute("href"));
-      const yOffset = -45; // adjust based on your navbar height
-      const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
-  
-      window.scrollTo({ top: y, behavior: 'smooth' });
-    });
-  });
-</script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener("click", function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute("href"));
+                const yOffset = -45; // adjust based on your navbar height
+                const y = target.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+                window.scrollTo({ top: y, behavior: 'smooth' });
+            });
+        });
+    </script>
 </body>
-  
+
 
 
 </body>
