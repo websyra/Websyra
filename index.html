@@ -17,13 +17,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+   
 </head>
 
 <body class="">
     <html class="scroll-smooth">
 
     <!-- Navbar -->
-    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50">
+    <nav class="fixed top-0 left-0 w-full bg-white shadow z-50 " >
         <div class="flex justify-between items-center p-3 ">
             <!-- Logo -->
             <div class="text-xl font-bold flex items-center gap-2">
@@ -45,8 +48,6 @@
                 <nav
                     class="absolute right-0 top-12 w-48 bg-white border rounded-lg shadow-lg opacity-0 peer-checked:opacity-100 peer-checked:translate-y-0 translate-y-4 transition-all duration-300 ease-in-out z-10">
                     <ul class="flex flex-col text-left p-4 space-y-2 text-sm text-gray-800">
-                        <li><a href="index.html" class="hover:text-yellow-600 transition">Home</a></li>
-                        <li><a href="#aboutus" class="hover:text-yellow-600 transition">About Us</a></li>
                         <li><a href="contact.html" class="hover:text-yellow-600 transition">Contact Us</a></li>
                         <li><a href="ourproj.html" class="hover:text-yellow-600 transition">Our Projects</a></li>
                         <li><a href="waw.html" class="hover:text-yellow-600 transition">Who Are We?</a></li>
@@ -57,11 +58,7 @@
 
             <!-- Desktop Menu -->
             <ul class="hidden  md:flex flex-row gap-8  items-center ">
-                <li>
-
-                    <a href="#aboutus" class="hover:text-yellow-600 hecked:text-yellow-600"><button
-                            class="btn btn-outline btn-warning">About Us</button></a>
-                </li>
+                
                 <li>
                     <a href="contact.html" class="hover:text-yellow-600 hecked:text-yellow-600">Contact Us</a>
                 </li>
@@ -129,63 +126,54 @@
 
 
 
-    <!-- Services -->
-    <section id="services" class="py-24 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl lg:text-5xl text-center font-bold mb-20 text-gray-800">
-                Services Offered
-            </h1>
+<!-- Services -->
+<!-- Services -->
+<section id="services" class="py-24 bg-gray-50">
+    <div class="container mx-auto px-4">
+        <h1 class="text-3xl lg:text-5xl text-center font-bold mb-20 text-gray-800">
+            Services Offered
+        </h1>
 
-            <!-- Row 1: 4 Cards -->
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10">
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/appcard.png" class="w-48 mx-auto mb-4 transition-transform duration-300"
-                        alt="App Development">
-                    <h2 class="text-2xl font-bold pb-8">App Development</h2>
-                </div>
-
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/seo.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="SEO">
-                    <h2 class="text-2xl font-bold pb-8">Search Engine Optimization</h2>
-                </div>
-
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/ui.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="UI/UX">
-                    <h2 class="text-2xl font-bold pb-8">UI/UX</h2>
-                </div>
-
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/wbdev.png" class="w-48 mx-auto mb-4 transition-transform duration-300"
-                        alt="Web Development">
-                    <h2 class="text-2xl font-bold pb-8">Web Development</h2>
-                </div>
+        <!-- Row 1: 4 Cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 mb-10 items-stretch">
+            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/appcard.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="App Development">
+                <h2 class="text-2xl font-bold mt-auto pb-8">App Development</h2>
             </div>
 
-            <!-- Row 2: 2 Centered Cards -->
-            <div class="flex justify-center gap-10 flex-wrap">
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/ecommerce.png" class="w-72 mx-auto mb-4 transition-transform duration-300"
-                        alt="E-Commerce">
-                    <h2 class="text-2xl font-bold pb-8 mt-20">E-Commerce</h2>
-                </div>
+            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/seo.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="SEO">
+                <h2 class="text-2xl font-bold mt-auto pb-8">Search Engine Optimization</h2>
+            </div>
 
-                <div
-                    class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg">
-                    <img src="./Images/erp.jpg" class="w-72 mx-auto mb-4 transition-transform duration-300" alt="ERP">
-                    <h2 class="text-2xl font-bold pb-8">ERP</h2>
-                </div>
+            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/ui.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="UI/UX">
+                <h2 class="text-2xl font-bold mt-auto pb-8">UI/UX</h2>
+            </div>
+
+            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/wbdev.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="Web Development">
+                <h2 class="text-2xl font-bold mt-auto pb-8">Web Development</h2>
             </div>
         </div>
-    </section>
 
+        <!-- Row 2: 2 Centered Cards with same size as above -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 items-stretch">
+            <div class="lg:col-start-2 border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/ecommerce.png" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="E-Commerce">
+                <h2 class="text-2xl font-bold mt-auto pb-8">E-Commerce</h2>
+            </div>
 
-
+            <div class="border-2 border-black rounded-2xl text-center p-4 transition transform hover:scale-105 hover:shadow-lg h-full flex flex-col justify-between">
+                <img src="./Images/erp.jpg" class="w-48 mx-auto mb-4 transition-transform duration-300" alt="ERP">
+                <h2 class="text-2xl font-bold mt-auto pb-8">ERP <br>
+                    ( Comming Soon)</h2>
+            </div>
+        </div>
     </div>
+</section>
+
+
 
 
 
@@ -203,13 +191,13 @@
             </div>
 
             <p class="mt-4 md:mt-6 text-xl md:ml-6 text-center md:text-left">
-                We strive to grow as a trusted digital collective—empowering <b>students </b>and developers to work on
-                real-world projects, expand their skills, and build strong portfolios in ERP, Full Stack Development,
-                Mobile Apps, and UI/UX. Together, we shape the future of purposeful digital innovation
+                At Websyra, we empower students and developers through real-world projects in ERP, Full Stack, Mobile Apps, and UI/UX—helping them grow and build strong portfolios.
+
                 <br><br>
-                At<b> Websyra</b>, we create <b>impactful digital solutions </b>by blending creativity, technology, and
-                strategy. Our
-                Vision is to deliver meaningful experiences that engage users and drive real value.
+                
+                We create impactful digital solutions that blend creativity, technology, and strategy to deliver real value.
+                
+                
 
 
             </p>
@@ -234,7 +222,7 @@
               <img src="./Images/teamup.png" class="w-72 mt-10 hidden md:flex">
             </div>
       
-            <p class="flex justify-center p-10 text-center">
+            <p class="flex justify-center p-10 text-center text-2xl ">
               Websyra gives student developers a head start—work on real projects, earn real money, and sharpen your skills in Full Stack, Mobile Apps, UI/UX, or ERP. Learn by doing, grow by building.
             </p>
       
@@ -342,38 +330,6 @@
 
 </html>
 
-<!-- About us -->
-<div class="mt-24">
-    <!-- Heading -->
-    <h1 class="font-bold text-3xl text-center mb-10">About us</h1>
-
-    <!-- Section -->
-    <section class="px-4 md:px-10" id="aboutus">
-        <div class="flex flex-col md:flex-row items-center justify-center gap-10 max-w-6xl mx-auto">
-
-            <!-- Text Content -->
-            <div class="md:w-1/2 text-center md:text-left">
-                <p class="text-gray-700 text-base md:text-lg leading-relaxed text-center md:text-left">
-                    <strong>Websyra</strong> is a dynamic platform where aspiring developers, freelancers, and students
-                    come together to work on <strong>real-world projects</strong>. We’re passionate about helping you
-                    grow—
-                    whether you're building your skills in Full Stack, UI/UX, Mobile Apps, or ERP. At Websyra, we
-                    believe in
-                    learning by doing, providing you with <strong>hands-on opportunities</strong> that not only help you
-                    build
-                    a solid portfolio but also allow you to earn while you grow.
-                </p>
-            </div>
-
-            <!-- Image -->
-            <div class="md:w-1/2 flex justify-center">
-                <img src="./Images/logo.png" alt="Websyra Logo" class=" w-72 md:w-96  rounded-full">
-            </div>
-
-        </div>
-    </section>
-</div>
-
 
 
 <!-- Footer -->
@@ -384,8 +340,7 @@
         <div>
             <h1 class="text-2xl font-bold mb-4">Get Help</h1>
             <ul class="space-y-2">
-                <li><a href="index.html#aboutus" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">About
-                        us</a></li>
+              
                 <li><a href="index.html#services" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Our
                         Services</a></li>
                 <li><a href="privacypolicy.html" class="hover:bg-yellow-50 px-2 py-1 rounded-full inline-block">Privacy

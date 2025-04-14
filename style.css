@@ -5,6 +5,14 @@ body{
 .beige{
     background-color: rgb(255, 255, 206);
 }
-.colorx{
-    
+.navb{
+    background-color: rgb(236, 236, 81);
+
 }
+@media screen and (max-width: 768px) {
+    body {
+        font-family: 'Inter', sans-serif;
+      }
+      
+  }
+  
